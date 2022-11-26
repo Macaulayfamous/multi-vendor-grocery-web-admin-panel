@@ -1,0 +1,32 @@
+import 'package:flutter/material.dart';
+import 'package:multi_grocery_web_admin/views/screens/category_screen.dart';
+import 'package:multi_grocery_web_admin/views/screens/vendors_screen.dart';
+import 'package:multi_grocery_web_admin/views/screens/withdrawal_screen.dart';
+
+class DashboardScreen extends StatelessWidget {
+  static const String id = '\dashboard';
+  const DashboardScreen({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          Container(
+            alignment: Alignment.topLeft,
+            padding: const EdgeInsets.all(10),
+            child: const Text(
+              'Dashboard',
+              style: TextStyle(
+                fontWeight: FontWeight.w700,
+                fontSize: 36,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
